@@ -8,7 +8,12 @@ import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { enrollCourse } from '../../app/features/course/courseSlice'; // ✅ Import action
 import { RootState } from "../../app/store";
-
+type Course = {
+  id: number;
+  course: string;
+  faculty: string;
+  enrolled: number;
+};
 const Enrolledpage = () => {
     const [show, setShow] = useState<boolean>(false);
     const courses = useSelector((state: RootState) => state.course.courses);
@@ -49,7 +54,7 @@ const Enrolledpage = () => {
                     {courses.length === 0 ? (
                         <p>No courses added yet.</p>
                     ) : (
-                        courses.map((course) => (
+                        courses.map((course:Course) => (
                             <Card
                                 key={course.id}
                                 style={{
