@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    @include flexCenter();
+    width: 100%;
+    min-height: 100vh;
+    gap:20px;
+    background-color: #090040;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    #{&}_card{
+        @include flexCenter();
+        padding: 10px;
+        background-color: #B13BFF;
+        color: white;
+        width: 40%;
+        border-radius: 10px;
+        &:hover{
+            background-color: #471396;
+            transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s;
+        }
+         @media (max-width: 768px) {
+            &{
+                
+                
+                width: 80%;
+                height: 30%;
+            }
+    }
+        
+        &_content{
+            @include flexCenter();
+            flex-direction: column;
+            gap:10px;
+            width: 80%;
+            height: 100%;
+            text-align: center;
+            @media (max-width: 768px) {
+                &{
+                    width: 100%;
+                }
+            }
+
+
+        }
+        &_button{
+            background-color: #FFCC00;
+            color: #090040;
+    text-decoration: none;
+
+
+            &:hover{
+                background-color: #FF9900;
+            }
+        }
+    }
+
+}
