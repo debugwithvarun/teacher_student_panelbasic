@@ -1,6 +1,5 @@
 import { Box, Button, Card } from '@mui/material'
 import GridViewRoundedIcon from '@mui/icons-material/GridViewRounded';
-import AddBoxRoundedIcon from '@mui/icons-material/AddBoxRounded';
 import LogoutSharpIcon from '@mui/icons-material/LogoutSharp';
 import Navbar from '../../components/Navbar'
 import DifferenceRoundedIcon from '@mui/icons-material/DifferenceRounded';
@@ -8,7 +7,7 @@ import Sidebar from '../../components/Sidebar'
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { enrollCourse } from '../../app/features/course/courseSlice'; // ✅ Import action
-// import { RootState } from "../../app/store";
+import { RootState } from "../../app/store";
 
 const Enrolledpage = () => {
     const [show, setShow] = useState<boolean>(false);

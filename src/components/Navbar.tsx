@@ -5,7 +5,7 @@ import type { Dispatch, SetStateAction } from 'react';
 
 const Navbar = ({show,setShow,title}:{show:boolean,setShow:Dispatch<SetStateAction<boolean>>,title:string}) => {
     return (
-        <AppBar position="fixed " className='navbar' >
+        <AppBar position="fixed" className='navbar' >
             <Toolbar className='navbar_toolbar'>
                 <IconButton edge="start" color="inherit"onClick={() => setShow(!show)}>
                     <MenuOpenSharpIcon fontSize='large' />

@@ -3,7 +3,6 @@ import Navbar from "../../components/Navbar"
 import Sidebar from "../../components/Sidebar";
 import "./dashboard.scss"
 import DifferenceRoundedIcon from '@mui/icons-material/DifferenceRounded';
-import FolderSpecialRoundedIcon from '@mui/icons-material/FolderSpecialRounded';
 import GridViewRoundedIcon from '@mui/icons-material/GridViewRounded';
 
 import LogoutSharpIcon from '@mui/icons-material/LogoutSharp';
