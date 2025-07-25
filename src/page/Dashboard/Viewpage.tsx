@@ -8,7 +8,7 @@ import Navbar from '../../components/Navbar'
 import Sidebar from '../../components/Sidebar'
 import { useState, type JSX } from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from "../../app/store"
+import type { RootState } from "../../app/store"
 type Course = {
   id: number;
   course: string;

@@ -1,5 +1,6 @@
 
 import {   Drawer, IconButton, List, ListItem } from '@mui/material'
+import type { JSX } from 'react';
 import { Link } from 'react-router-dom';
 
 const Sidebar = ({show,sidebarmenu}:{show:boolean,sidebarmenu:{id:number,title:string,icon:JSX.Element}[]}) => {

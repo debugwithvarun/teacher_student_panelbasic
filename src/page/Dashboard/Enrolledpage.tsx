@@ -7,7 +7,7 @@ import Sidebar from '../../components/Sidebar'
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { enrollCourse } from '../../app/features/course/courseSlice'; // ✅ Import action
-import { RootState } from "../../app/store";
+import type { RootState } from "../../app/store";
 type Course = {
   id: number;
   course: string;
